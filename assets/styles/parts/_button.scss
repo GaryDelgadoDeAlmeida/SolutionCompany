@@ -1,0 +1,62 @@
+/* ----------------------------------------------- *\
+    Button
+\* ----------------------------------------------- */
+button {
+    cursor: pointer;
+}
+
+.btn {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px 1rem;
+    user-select: none;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    border: 1px solid transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &.btn-xl {
+        font-size: 18px;
+        padding: 1rem 2.5rem;
+    }
+
+    &.btn-bold {
+        font-weight: 600;
+    }
+
+    &.btn-hero {
+        width: 250px;
+        font-size: 18px;
+        min-height: 50px;
+        font-weight: 600;
+    }
+
+    &.btn-secondary {
+        color: var(--c-white);
+        background-color: var(--c-secondary);
+        border: 1px solid var(--c-secondary);
+
+        &:hover {
+            transition: .3s ease;
+            color: var(--c-secondary);
+            background-color: transparent;
+        }
+    }
+
+    &.btn-white {
+        color: var(--c-black);
+        background-color: var(--c-white);
+        border: 1px solid var(--c-white);
+
+        &:hover {
+            transition: .3s ease;
+            color: var(--c-white);
+            background-color: transparent;
+        }
+    }
+}

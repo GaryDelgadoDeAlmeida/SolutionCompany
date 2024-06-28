@@ -1,0 +1,47 @@
+.services {
+    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service-card {
+        gap: 25px;
+        display: flex;
+
+        .-icon {
+            width: 50px;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+
+            img {
+                width: 35px;
+            }
+        }
+
+        .-content {
+            flex: 1;
+
+            .-header {
+                padding-bottom: 10px;
+                border-bottom: 2px solid var(--c-black);
+
+                .-title {
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+            }
+
+            .-description {
+                font-size: 16px;
+            }
+        }
+    }
+}

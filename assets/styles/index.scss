@@ -1,0 +1,64 @@
+:root {
+  // Theme colors
+	--body-color: #f1f4f8;
+    --c-primary: --c-white;
+    --c-secondary: #93ca39;
+
+	// Colors
+    --c-gray: #d9d9d9;
+	--c-white: #ffffff;
+	--c-green: #188038;
+	--c-orange: #ffa500;
+	--c-darkRed: #8B0000;
+	--c-black: #000000;
+
+	// Specific colors
+	--c-greenLime: #198344;
+	--c-lightGreen: #a8f1c6;
+	--c-lightOrange: #fff9f0;
+	--c-lightRed: #ffe0e3;
+	--c-dimmGray: #696969;
+	--c-lightGray: #f2f2f2;
+}
+
+@mixin desktop {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tiny_mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+a, a:hover {
+    text-decoration: none
+}
+
+/* -------------- Import Parts -------------- */
+@import "./parts/site";
+@import "./parts/site_admin";
+@import "./parts/helper";
+@import "./parts/button";
+@import "./parts/notification";
+@import "./parts/services";
+@import "./parts/about";
+@import "./parts/teams";
+@import "./parts/prices";
+@import "./parts/portfolios";
+@import "./parts/contact";
+@import "./parts/form";

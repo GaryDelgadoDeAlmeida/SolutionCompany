@@ -1,0 +1,90 @@
+.portfolios {
+    // 
+
+    .portfolios-filter {
+        gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .-filter {
+            font-size: 16px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: var(--c-dimmGray);
+            border: 1px solid var(--c-gray);
+            background-color: var(--c-white);
+
+            &:hover {
+                transition: .3s ease;
+                color: var(--c-white);
+                border: 1px solid var(--c-secondary);
+                background-color: var(--c-secondary);
+            }
+        }
+    }
+
+    .portfolios-content {
+        gap: 25px;
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: repeat(3, 1fr);
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .portfolio-card {
+            height: 300px;
+            position: relative;
+            background-color: rgba($color: #000000, $alpha: .8);
+
+            &:hover {
+                transition: 1s ease;
+
+                .-header {
+                    display: none;
+                }
+
+                .-content {
+                    display: flex;
+                }
+            }
+
+            .-header {
+                z-index: 1;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .-content {
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                display: none;
+                position: absolute;
+                color: var(--c-white);
+
+                .-title {
+                    padding: 0;
+                    margin: auto;
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

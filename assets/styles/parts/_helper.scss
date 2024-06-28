@@ -1,0 +1,154 @@
+/* ----------------------------------------------- *\
+    Texte
+\* ----------------------------------------------- */
+.txt-left {
+    text-align: left;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-justify {
+    text-align: justify;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-content: center;
+}
+
+
+/* ----------------------------------------------- *\
+    Height
+\* ----------------------------------------------- */
+.hm-500px {
+    min-height: 500px;
+}
+
+
+/* ----------------------------------------------- *\
+    Font-size
+\* ----------------------------------------------- */
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+
+/* ----------------------------------------------- *\
+    Font-Weight
+\* ----------------------------------------------- */
+.fw-normal {
+    font-weight: normal;
+}
+
+.fw-bold {
+    font-weight: 600;
+}
+
+
+/* ----------------------------------------------- *\
+    Background
+\* ----------------------------------------------- */
+.bg-white {
+    background-color: var(--c-white);
+}
+
+
+/* ----------------------------------------------- *\
+    Colors
+\* ----------------------------------------------- */
+.c-secondary {
+    color: var(--c-secondary);
+}
+
+.c-black {
+    color: var(--c-black);
+}
+
+.c-white {
+    color: var(--c-white);
+}
+
+/* ----------------------------------------------- *\
+    Padding
+\* ----------------------------------------------- */
+.p-0 {
+    padding: 0 !important;
+}
+
+.p-5 {
+    padding: 5px !important;
+}
+
+.px-5 {
+    padding: 5px 0 !important;
+}
+
+.py-5 {
+    padding: 0 5px !important;
+}
+
+.px-10 {
+    padding: 10px 0 !important;
+}
+
+.px-10-only {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.py-10 {
+    padding: 0 10px !important;
+}
+
+
+/* ----------------------------------------------- *\
+    Margin
+\* ----------------------------------------------- */
+.m-auto {
+    margin: auto;
+}
+
+.mx-auto {
+    margin: auto 0;
+}
+
+.my-auto {
+    margin: 0 auto;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+
+/* ----------------------------------------------- *\
+    Display
+\* ----------------------------------------------- */
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
